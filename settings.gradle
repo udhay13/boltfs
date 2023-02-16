@@ -1,0 +1,3 @@
+include ':zxing'
+include ':core'
+include ':app'

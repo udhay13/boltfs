@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_manage_devices"
+    app:startDestination="@id/manageClientsFragment">
+
+    <fragment
+        android:id="@+id/manageClientsFragment"
+        android:name="org.monora.uprotocol.client.android.fragment.ManageClientsFragment"
+        android:label="@string/manage_clients" >
+        <action
+            android:id="@+id/action_manageDevicesFragment2_to_clientDetailsFragment3"
+            app:destination="@id/clientDetailsFragment3" />
+    </fragment>
+    <dialog
+        android:id="@+id/clientDetailsFragment3"
+        android:name="org.monora.uprotocol.client.android.fragment.ClientDetailsFragment"
+        android:label="@string/client_details" >
+        <argument
+            android:name="client"
+            app:argType="org.monora.uprotocol.client.android.database.model.UClient" />
+    </dialog>
+</navigation>

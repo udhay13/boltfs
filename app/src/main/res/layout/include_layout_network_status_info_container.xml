@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_hotspot_status_info_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="4dp"
+    android:paddingBottom="15dp">
+
+    <TextView
+        android:paddingLeft="30dp"
+        android:paddingTop="15dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="15dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/layout_network_manager_info_container_text1"
+        style="@style/TextAppearance.Primary.Normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:maxLines="5"
+        android:text="@string/help" />
+
+    <Button
+        android:id="@+id/layout_network_manager_info_toggle_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/start_hotspot"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp" />
+
+    <LinearLayout
+        android:id="@+id/layout_network_manager_info_container_text2_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingTop="15dp"
+        android:paddingRight="30dp"
+        android:gravity="center_vertical">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/layout_network_manager_info_container_text2_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_wifi_tethering_white_24dp" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/layout_network_manager_info_container_text2"
+            style="@style/TextAppearance.Primary.Normal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="@string/unknown" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_network_manager_info_container_text3_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingTop="25dp"
+        android:paddingRight="30dp"
+        android:gravity="center_vertical">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/layout_network_manager_info_container_text3_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_vpn_key_white_24dp" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/layout_network_manager_info_container_text3"
+            style="@style/TextAppearance.Primary.Normal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="@string/unknown" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/layout_network_manager_info_second_toggle_button"
+        style="?materialButtonOutlinedStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/wifi_settings"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="30dp" />
+</LinearLayout>
